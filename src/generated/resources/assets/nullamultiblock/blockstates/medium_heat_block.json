@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nullamultiblock:block/medium_heat_block"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "heat_level=high_heat": {
+      "model": "nullamultiblock:block/high_heat_counter"
+    },
+    "heat_level=low_heat": {
+      "model": "nullamultiblock:block/low_heat_counter"
+    },
+    "heat_level=medium_heat": {
+      "model": "nullamultiblock:block/medium_heat_counter"
+    },
+    "heat_level=none_heat": {
+      "model": "nullamultiblock:block/heat_counter"
+    }
+  }
+}

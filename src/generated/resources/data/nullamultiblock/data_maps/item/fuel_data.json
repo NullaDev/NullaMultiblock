@@ -1,0 +1,16 @@
+{
+  "values": {
+    "#minecraft:coals": {
+      "burning_time": 1600,
+      "heat_level": 2
+    },
+    "#minecraft:logs": {
+      "burning_time": 600,
+      "heat_level": 1
+    },
+    "#minecraft:planks": {
+      "burning_time": 300,
+      "heat_level": 1
+    }
+  }
+}

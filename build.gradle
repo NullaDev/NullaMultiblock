@@ -16,10 +16,6 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
-repositories {
-    mavenLocal()
-}
-
 base {
     archivesName = mod_id
 }
@@ -111,6 +107,14 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    mavenLocal()
+
+    maven { // Registrate
+        url "https://maven.ithundxr.dev/snapshots"
+    }
+}
+
 dependencies {
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -133,6 +137,8 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    implementation jarJar(group: 'com.tterrag.registrate', name: 'Registrate', version: "[${registrate_version},)")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

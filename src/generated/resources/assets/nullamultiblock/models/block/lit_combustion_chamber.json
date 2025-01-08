@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "nullamultiblock:block/combustion_chamber_top",
+    "east": "nullamultiblock:block/combustion_chamber_side",
+    "north": "nullamultiblock:block/combustion_chamber_front_lit",
+    "south": "nullamultiblock:block/combustion_chamber_side",
+    "up": "nullamultiblock:block/combustion_chamber_top",
+    "west": "nullamultiblock:block/combustion_chamber_side"
+  }
+}
