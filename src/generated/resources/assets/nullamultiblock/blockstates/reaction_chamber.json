@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "nullamultiblock:block/reaction_chamber",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nullamultiblock:block/reaction_chamber"
+    },
+    "facing=south": {
+      "model": "nullamultiblock:block/reaction_chamber",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nullamultiblock:block/reaction_chamber",
+      "y": 270
+    }
+  }
+}

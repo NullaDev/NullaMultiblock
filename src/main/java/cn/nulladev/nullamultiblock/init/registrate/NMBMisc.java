@@ -1,7 +1,7 @@
 package cn.nulladev.nullamultiblock.init.registrate;
 
 import cn.nulladev.nullamultiblock.api.heat.HeatLevel;
-import cn.nulladev.nullamultiblock.content.blocks.blockentities.CombustionChamberEntity;
+import cn.nulladev.nullamultiblock.content.blocks.entities.*;
 import cn.nulladev.nullamultiblock.content.datamaps.DataMapTypes;
 import cn.nulladev.nullamultiblock.content.datamaps.FuelData;
 import com.tterrag.registrate.providers.ProviderType;
@@ -15,6 +15,7 @@ import static cn.nulladev.nullamultiblock.init.NullaMultiblock.REGISTRATE;
 
 public class NMBMisc {
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+        // Register combustion chamber
         event.registerBlock(
                 Capabilities.ItemHandler.BLOCK,
                 (level, blockPos, blockState, blockEntity, direction) -> {
@@ -26,6 +27,31 @@ public class NMBMisc {
                 },
                 NMBBlocks.COMBUSTION_CHAMBER.get()
         );
+        // Register furnace chamber
+        event.registerBlock(
+                Capabilities.ItemHandler.BLOCK,
+                (level, blockPos, blockState, blockEntity, direction) -> {
+                    if (blockEntity instanceof FurnaceChamberEntity furnaceChamber) {
+                        return furnaceChamber.CONTENT;
+                    } else {
+                        return null;
+                    }
+                },
+                NMBBlocks.FURNACE_CHAMBER.get()
+        );
+        // Register crucible
+        event.registerBlock(
+                Capabilities.FluidHandler.BLOCK,
+                (level, blockPos, blockState, blockEntity, direction) -> {
+                    if (blockEntity instanceof CrucibleEntity crucible) {
+                        return crucible.TANK;
+                    } else {
+                        return null;
+                    }
+                },
+                NMBBlocks.CRUCIBLE.get()
+        );
+
     }
 
     public static void registerDataMapTypes(RegisterDataMapTypesEvent event) {

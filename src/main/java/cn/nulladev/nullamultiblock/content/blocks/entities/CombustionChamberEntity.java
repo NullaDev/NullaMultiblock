@@ -1,4 +1,4 @@
-package cn.nulladev.nullamultiblock.content.blocks.blockentities;
+package cn.nulladev.nullamultiblock.content.blocks.entities;
 
 import cn.nulladev.nullamultiblock.api.NMBProperties;
 import cn.nulladev.nullamultiblock.content.datamaps.DataMapTypes;

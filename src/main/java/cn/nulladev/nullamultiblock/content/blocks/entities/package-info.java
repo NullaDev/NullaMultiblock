@@ -1,7 +1,7 @@
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 
-package cn.nulladev.nullamultiblock.content.blocks.blockentities;
+package cn.nulladev.nullamultiblock.content.blocks.entities;
 
 import net.minecraft.MethodsReturnNonnullByDefault;
 

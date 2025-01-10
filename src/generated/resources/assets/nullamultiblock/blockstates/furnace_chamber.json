@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nullamultiblock:block/furnace_chamber"
+    }
+  }
+}

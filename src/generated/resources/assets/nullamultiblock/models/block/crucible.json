@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "nullamultiblock:block/crucible_bottom",
+    "side": "nullamultiblock:block/crucible_side",
+    "top": "nullamultiblock:block/crucible_top"
+  }
+}

@@ -1,10 +1,14 @@
 {
   "block.nullamultiblock.combustion_chamber": "ɹǝqɯɐɥƆ uoıʇsnqɯoƆ",
+  "block.nullamultiblock.crucible": "ǝןqıɔnɹƆ",
+  "block.nullamultiblock.furnace_chamber": "ɹǝqɯɐɥƆ ǝɔɐuɹnℲ",
   "block.nullamultiblock.heat_counter": "ɹǝʇunoƆ ʇɐǝH",
   "block.nullamultiblock.high_heat_block": "ʞɔoןᗺ ʇɐǝH ɥbıH",
   "block.nullamultiblock.low_heat_block": "ʞɔoןᗺ ʇɐǝH ʍoꞀ",
   "block.nullamultiblock.medium_heat_block": "ʞɔoןᗺ ʇɐǝH ɯnıpǝW",
+  "block.nullamultiblock.mixing_chamber": "ɹǝqɯɐɥƆ buıxıW",
   "block.nullamultiblock.none_heat_block": "ʞɔoןᗺ ʇɐǝH ǝuoN",
+  "block.nullamultiblock.reaction_chamber": "ɹǝqɯɐɥƆ uoıʇɔɐǝᴚ",
   "block.nullamultiblock.sulphur_block": "ʞɔoןᗺ ɹnɥdןnS",
   "itemGroup.nullamultiblock.nullamultiblock": "ʞɔoןqıʇןnɯɐןןnN"
 }

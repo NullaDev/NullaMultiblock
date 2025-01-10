@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "nullamultiblock:block/furnace_chamber_bottom",
+    "side": "nullamultiblock:block/furnace_chamber_side",
+    "top": "nullamultiblock:block/furnace_chamber_top"
+  }
+}

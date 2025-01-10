@@ -2,7 +2,7 @@ package cn.nulladev.nullamultiblock.content.blocks;
 
 import cn.nulladev.nullamultiblock.api.NMBProperties;
 import cn.nulladev.nullamultiblock.api.heat.HeatLevel;
-import cn.nulladev.nullamultiblock.content.blocks.blockentities.HeatCounterEntity;
+import cn.nulladev.nullamultiblock.content.blocks.entities.HeatCounterEntity;
 import cn.nulladev.nullamultiblock.init.registrate.NMBBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;

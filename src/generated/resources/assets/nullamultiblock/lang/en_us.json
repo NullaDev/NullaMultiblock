@@ -1,10 +1,14 @@
 {
   "block.nullamultiblock.combustion_chamber": "Combustion Chamber",
+  "block.nullamultiblock.crucible": "Crucible",
+  "block.nullamultiblock.furnace_chamber": "Furnace Chamber",
   "block.nullamultiblock.heat_counter": "Heat Counter",
   "block.nullamultiblock.high_heat_block": "High Heat Block",
   "block.nullamultiblock.low_heat_block": "Low Heat Block",
   "block.nullamultiblock.medium_heat_block": "Medium Heat Block",
+  "block.nullamultiblock.mixing_chamber": "Mixing Chamber",
   "block.nullamultiblock.none_heat_block": "None Heat Block",
+  "block.nullamultiblock.reaction_chamber": "Reaction Chamber",
   "block.nullamultiblock.sulphur_block": "Sulphur Block",
   "itemGroup.nullamultiblock.nullamultiblock": "Nullamultiblock"
 }

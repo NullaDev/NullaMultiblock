@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "nullamultiblock:block/mixing_chamber_front",
+    "side": "nullamultiblock:block/mixing_chamber_side",
+    "top": "nullamultiblock:block/mixing_chamber_top"
+  }
+}

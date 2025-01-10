@@ -2,7 +2,7 @@ package cn.nulladev.nullamultiblock.content.blocks;
 
 import cn.nulladev.nullamultiblock.api.NMBProperties;
 import cn.nulladev.nullamultiblock.api.heat.HeatLevel;
-import cn.nulladev.nullamultiblock.content.blocks.blockentities.CombustionChamberEntity;
+import cn.nulladev.nullamultiblock.content.blocks.entities.CombustionChamberEntity;
 import cn.nulladev.nullamultiblock.content.datamaps.DataMapTypes;
 import cn.nulladev.nullamultiblock.init.registrate.NMBBlocks;
 import net.minecraft.core.BlockPos;
@@ -32,9 +32,8 @@ import net.minecraft.world.phys.BlockHitResult;
 
 import javax.annotation.Nullable;
 
-public class CombustionChamber extends Block implements EntityBlock {
+public class CombustionChamber extends HorizontalComponent implements EntityBlock {
 
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
     public static final EnumProperty<HeatLevel> HEAT_LEVEL = NMBProperties.HEAT_LEVEL;
 
@@ -90,16 +89,6 @@ public class CombustionChamber extends Block implements EntityBlock {
         return blockEntityType == NMBBlocks.COMBUSTION_CHAMBER_ENTITY.get() ?
                 (BlockEntityTicker<T>) (BlockEntityTicker<CombustionChamberEntity>) CombustionChamberEntity::tick :
                 null;
-    }
-
-    @Override
-    protected BlockState rotate(BlockState state, Rotation rotation) {
-        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
-    }
-
-    @Override
-    protected BlockState mirror(BlockState state, Mirror mirror) {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
     @Override
