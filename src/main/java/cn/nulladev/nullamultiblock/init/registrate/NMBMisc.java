@@ -32,7 +32,7 @@ public class NMBMisc {
                 Capabilities.ItemHandler.BLOCK,
                 (level, blockPos, blockState, blockEntity, direction) -> {
                     if (blockEntity instanceof FurnaceChamberEntity furnaceChamber) {
-                        return furnaceChamber.CONTENT;
+                        return furnaceChamber.INPUT_STACK;
                     } else {
                         return null;
                     }
@@ -44,7 +44,7 @@ public class NMBMisc {
                 Capabilities.FluidHandler.BLOCK,
                 (level, blockPos, blockState, blockEntity, direction) -> {
                     if (blockEntity instanceof CrucibleEntity crucible) {
-                        return crucible.TANK;
+                        return crucible.INPUT_TANK;
                     } else {
                         return null;
                     }

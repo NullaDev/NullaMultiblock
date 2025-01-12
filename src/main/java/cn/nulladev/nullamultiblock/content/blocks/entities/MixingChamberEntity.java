@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
+import net.neoforged.neoforge.items.ItemStackHandler;
 
 import javax.annotation.Nullable;
 
@@ -17,6 +18,7 @@ public class MixingChamberEntity extends BlockEntity {
     public final FluidTank TANK_1 = new FluidTank(1000);
     public final FluidTank TANK_2 = new FluidTank(1000);
     public final FluidTank TANK_3 = new FluidTank(1000);
+    public final FluidTank OUTPUT_TANK = new FluidTank(1000);
 
     public MixingChamberEntity(BlockEntityType<?> type, BlockPos pos, BlockState blockState) {
         super(type, pos, blockState);
